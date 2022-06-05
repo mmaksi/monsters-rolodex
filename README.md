@@ -7,7 +7,7 @@ This app is from the ZTM Full React course and it implements the basics of React
 You can see a demo for this project here: [https://monsrolodex.netlify.app/](https://monsrolodex.netlify.app/)
 
 # Instructions
-1. `git clone`
+1. `git clone https://github.com/mmaksi/monsters-rolodex.git`
 2. `cd monsters-rolodex`
 3. `npm install`
 4. `npm run start`
