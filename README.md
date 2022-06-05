@@ -3,6 +3,15 @@ This app is from the ZTM Full React course and it implements the basics of React
 
 ![monsters-rolodex-project](https://i.ibb.co/6nVsWcD/monsters-rolodex.png)
 
+# Demo
+You can see a demo for this project here: [https://monsrolodex.netlify.app/](https://monsrolodex.netlify.app/)
+
+# Instructions
+1. `git clone`
+2. `cd monsters-rolodex`
+3. `npm install`
+4. `npm run start`
+
 ## CHAPTER 1: React Key Concepts
 ### The Birth of React.js
 In the old days, browsers were not compatible with each others so you had to code for different browsers. jQuery solved the problem of non-compatibility
