@@ -14,18 +14,18 @@ SPA means that JS updates the DOM locally like a desktop app without talking to 
 - In React, you _declare_ what `state` is and how it's going to change based on user interaction
 
 #### Rule #2 - Build website like lego blocks.
-Components make it possible to write reusable code in the same or in different projects
-There are libraries like Material UI, React Bootstrap, Blueprint that make several JS components 
+- Components make it possible to write reusable code in the same or in different projects
+- There are libraries like Material UI, React Bootstrap, Blueprint that make several JS components 
 
 #### Rule #3 - Unidirectional data flow.
-Date can flow only from the state to the Virtual DOM to the real DOM. So if you want to change the DOM you need to change the `state` of your components.
+- Date can flow only from the state to the Virtual DOM to the real DOM. So if you want to change the DOM you need to change the `state` of your components.
 
-Unidirectional data flow restriction makes it easier to debug the code. If there is an issue with the `login state` for instance, you just look at where this state lives and what components recieve that state
+- Unidirectional data flow restriction makes it easier to debug the code. If there is an issue with the `login state` for instance, you just look at where this state lives and what components recieve that state
 
 #### Rule #4 - React is a UI Library. The rest is up to you.
-React is a UI library not a framework
+- React is a UI library not a framework
 
-React doesn't make assumptions about what technologies you use. All it gives is this idea of _blueprint_ about the UI and you use different Robots to use this blueprint. In React web apps, you use _react DOM_ library to use the blueprint. But react isn't for web apps only. You can use `React 360` or `React Native` or `electron` or `React Desktop` and all of these Robots know nothing about the web DOM. They use the React blueprint for their UI.
+- React doesn't make assumptions about what technologies you use. All it gives is this idea of _blueprint_ about the UI and you use different Robots to use this blueprint. In React web apps, you use _react DOM_ library to use the blueprint. But react isn't for web apps only. You can use `React 360` or `React Native` or `electron` or `React Desktop` and all of these Robots know nothing about the web DOM. They use the React blueprint for their UI.
 
 ### How to be a great React developer?
 1. Decide on components
