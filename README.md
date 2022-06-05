@@ -1,6 +1,8 @@
 # Monsters Rolodex
 This app is from the ZTM Full React course and it implements the basics of React UI Library like class-based components, functional components, useState and useEffect hooks and filtering search box to filter out monsters cards.
 
+![monsters-rolodex-project](https://i.ibb.co/6nVsWcD/monsters-rolodex.png)
+
 ## CHAPTER 1: React Key Concepts
 ### The Birth of React.js
 In the old days, browsers were not compatible with each others so you had to code for different browsers. jQuery solved the problem of non-compatibility
