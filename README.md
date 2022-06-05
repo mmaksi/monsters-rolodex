@@ -83,6 +83,7 @@ setState(updaterFunction, callbackFunction)
 
 - Components re-render when `setState()` is called OR when the props are `changed`
 
+Check out this [interactive diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 ![class-based component lifecycle flow](https://i.ibb.co/CtdXBh3/classes-lifecycle.png)
 
 ### Functional Components
