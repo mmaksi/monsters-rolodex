@@ -83,7 +83,7 @@ setState(updaterFunction, callbackFunction)
 
 - Components re-render when `setState()` is called OR when the props are `changed`
 
-![class-based component lifecycle flow](http://url/to/img.png)
+![class-based component lifecycle flow](https://1drv.ms/u/s!ArG_qjFjxhpXgwjtzfCgt4Rthkci?e=85HtR7)
 
 ### Functional Components
 - To understand Functional Components, you *cannot* think of them in terms of Lifecycle methods because they don't have lifecycles. You must think in a different mental model
