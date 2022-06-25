@@ -11,6 +11,7 @@ type SearchBoxProps = {
 
 export const SearchBox = ({ className, placeholder, onChangeHandler }: SearchBoxProps) => (
   <input
+    aria-label="Monsters rolodex"
     className={`search-box ${className}`}
     type="search"
     placeholder={placeholder}
