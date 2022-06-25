@@ -1,5 +1,5 @@
 # Monsters Rolodex
-This app is from the ZTM Full React course and it implements the basics of React UI Library like class-based components, functional components, useState and useEffect hooks and filtering search box to filter out monsters cards.
+This simple app implements the common features of React UI Library and 3rd party libraries like Redux, Redux Thunk and Redux Logger. The app is built with functional components, useState and useEffect hooks, redux, thunk middleware for asyncronous calls as well as filtering feature in the search box to filter out monsters cards.
 
 ![monsters-rolodex-project](https://i.ibb.co/6nVsWcD/monsters-rolodex.png)
 
