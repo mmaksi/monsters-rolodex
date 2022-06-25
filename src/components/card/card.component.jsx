@@ -1,13 +1,6 @@
-import React from 'react';
-import { Monster } from '../../App';
-
 import './card.styles.css';
 
-type CardProps = {
-  monster: Monster
-}
-
-export const Card = (props: CardProps) => (
+export const Card = (props) => (
   <div className='card-container'>
     <img
       alt='monster'

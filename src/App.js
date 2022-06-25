@@ -1,29 +1,26 @@
-import { ChangeEvent, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { CardList } from "./components/card-list/card-list.component";
 import { SearchBox } from "./components/search-box/search-box.component";
 
 import "./App.css";
-import { getData } from "./utils/data.utils";
-
-export type Monster = {
-  id: string;
-  name: string;
-  email: string;
-}
+import { selectSearchField } from "./store/searchField/searchField.selector";
+import { fetchMonstersPendingAsync } from "./store/robots/monsters.action";
+import { useDispatch, useSelector } from "react-redux";
+import { selectMonsters } from "./store/robots/monsters.selector";
+import { setSearchFieldAction } from "./store/searchField/searchField.action";
 
 const App = () => {
-  const [monsters, setMonsters] = useState<Monster[]>([]);
-  const [searchField, setSearchField] = useState("");
+  const dispatch = useDispatch();
+
+  const monsters = useSelector(selectMonsters)
+  const searchField = useSelector(selectSearchField)
+
   const [filteredMonsters, setFilteredMonsters] = useState(monsters)
 
-  useEffect(() => {
-    const fetchUsers = async () => {
-      const users = await getData <Monster[]> ("https://jsonplaceholder.typicode.com/users")
-      setMonsters(users)
-    }
-    fetchUsers()
-  }, []);
+  useEffect (() => {
+    dispatch(fetchMonstersPendingAsync());
+  }, [dispatch])
 
   useEffect(() => {
     const newFilteredMonsters = monsters.filter((monster) =>
@@ -33,8 +30,8 @@ const App = () => {
   setFilteredMonsters(newFilteredMonsters)
   }, [monsters, searchField]);
 
-  const onSearchChange = (event: ChangeEvent<HTMLInputElement>): void => {
-    setSearchField(event.target.value.toLocaleLowerCase());
+  const onSearchChange = (event) => {
+    dispatch(setSearchFieldAction(event.target.value.toLocaleLowerCase()));
   };
 
   return (

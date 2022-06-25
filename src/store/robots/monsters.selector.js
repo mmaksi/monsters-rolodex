@@ -1,0 +1,1 @@
+export const selectMonsters = (state) => state.monsters.monsters

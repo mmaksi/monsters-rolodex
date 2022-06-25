@@ -1,5 +1,5 @@
 # Monsters Rolodex
-This simple app implements the common React UI Library features: functional components, useState and useEffect hooks, reudx, redux thunk and filtering search box to filter out monsters cards.
+This app is from the ZTM Full React course and it implements the basics of React UI Library like class-based components, functional components, useState and useEffect hooks and filtering search box to filter out monsters cards.
 
 ![monsters-rolodex-project](https://i.ibb.co/6nVsWcD/monsters-rolodex.png)
 

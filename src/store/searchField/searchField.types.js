@@ -1,0 +1,3 @@
+export const SEARCH_FIELD_ACTIONS_TYPE = {
+    SET_SEARCH_FIELD: "searchField/SET_SEARCH_FIELD"
+}
