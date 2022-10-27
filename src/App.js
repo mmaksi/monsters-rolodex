@@ -16,7 +16,7 @@ const App = () => {
   const monsters = useSelector(selectMonsters)
   const searchField = useSelector(selectSearchField)
 
-  const [filteredMonsters, setFilteredMonsters] = useState(monsters)
+  const [filteredMonsters, setFilteredMonsters] = useState([])
 
   useEffect (() => {
     dispatch(fetchMonstersPendingAsync());

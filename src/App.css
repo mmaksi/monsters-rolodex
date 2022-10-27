@@ -4,6 +4,12 @@
 
 h1 {
   font-family: 'Bigelow Rules';
-  font-size: 72px;
+  font-size: 40px;
   color: #0ccac4;
+}
+
+@media screen and (max-width: 630px) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }
